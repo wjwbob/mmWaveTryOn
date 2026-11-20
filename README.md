@@ -2,6 +2,10 @@
 
 PyTorch training and evaluation code for classifying 11 clothes try-on gestures from mmWave range–Doppler images, RGB-derived skeleton coordinates, or both. This release reconstructs the six models in Table 3 from the training-machine source history and archived checkpoints. [Paper](https://doi.org/10.1145/3737904.3768535) · [Authors’ project page](https://weixijia.github.io/mmWaveTryOn/)
 
+![Radar chart comparing six gesture recognition models across 11 action classes](assets/figure-3-radar.png)
+
+**Figure 3 from the paper.** The skeleton CNN, skeleton CNN + LSTM and radar CNN curves show per-class F1. The radar CNN + LSTM, Concat and Attention curves show per-class recall. Some action labels in the published figure differ from the dataset mapping. For example, the “Shoulder Rolls” axis contains the arm-lift scores.
+
 ## Inputs and models
 
 Each labelled clip contains 20 consecutive frames. The model determines which frames and transforms the loader uses.
